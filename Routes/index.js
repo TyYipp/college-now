@@ -1,7 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const userRoutes = require("./User");
-const locationRoutes = require("./Locations");
+const locationRoutes = require("../Routes/Location.js");
 const shopController = require("../controllers/shopController");
 const logger = require("../middleware/logger.js");
 router.use("/users", logger.logger, userRoutes);
