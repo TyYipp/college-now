@@ -64,6 +64,7 @@ app.post('/register', async (req, res) => {
     res.status(500).json({ message: 'Server Error' });
   }
 });
+require('dotenv').config();
 
 // Login Route
 app.post('/login', async (req, res) => {
